@@ -29,7 +29,7 @@ export default function AdminAddMember({ setUpdate }) {
 
 
     const addNewMember = async () => {
-        const res = await fetch(`https://keneset-api.herokuapp.com/admin`, {
+        const res = await fetch(`https://tara-api-29yt.onrender.com/admin`, {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ first_name, last_name, facebook, twitter, party, gov_role, kenesst_role, additional_role, personal_phone, office_phone, email, speaker_name, speaker_phone, head_office_name, head_office_phone, political_consultant_name, political_consultant_phone, picture, position }),

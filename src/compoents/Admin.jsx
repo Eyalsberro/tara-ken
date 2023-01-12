@@ -10,7 +10,7 @@ export default function Admin({ members, searchValue, setUpdate }) {
   const navigate = useNavigate()
 
   const logout = async () => {
-    const res = await fetch('https://keneset-api.herokuapp.com/user/logout', {
+    const res = await fetch('https://tara-api-29yt.onrender.com/user/logout', {
       method: "delete",
       credentials: "include"
     })

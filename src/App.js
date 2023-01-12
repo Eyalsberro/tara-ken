@@ -12,9 +12,9 @@ export default function App() {
 
 
   useEffect(() => {
-    
+
     setTimeout(async () => {
-      const res = await fetch(`https://keneset-api.herokuapp.com/members`, {
+      const res = await fetch(`https://tara-api-29yt.onrender.com/members`, {
         method: 'GET',
         headers: { 'content-type': 'application/json' },
         credentials: "include"
@@ -26,7 +26,7 @@ export default function App() {
         setMembers(data)
         setLoding(true)
       }
-    },100)
+    }, 100)
 
   }, [update])
 
@@ -34,7 +34,7 @@ export default function App() {
     <div>
       <Router>
         <Headers members={members} setSearchValue={setSearchValue} searchValue={searchValue} />
-        <Main members={members} searchValue={searchValue} loding={loding} setUpdate={setUpdate}/>
+        <Main members={members} searchValue={searchValue} loding={loding} setUpdate={setUpdate} />
       </Router>
     </div>
   )

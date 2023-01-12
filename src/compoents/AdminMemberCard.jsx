@@ -27,7 +27,7 @@ export default function AdminMemberCard({ members, setUpdate }) {
 
     const memberid = () => {
         (async () => {
-            const res = await fetch(`https://keneset-api.herokuapp.com/members/${members.memberID}`, {
+            const res = await fetch(`https://tara-api-29yt.onrender.com/members/${members.memberID}`, {
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
                 credentials: "include"
@@ -44,7 +44,7 @@ export default function AdminMemberCard({ members, setUpdate }) {
     }
 
     const editMember = async () => {
-        const res = await fetch(`https://keneset-api.herokuapp.com/admin/${members.memberID}`, {
+        const res = await fetch(`https://tara-api-29yt.onrender.com/admin/${members.memberID}`, {
             method: "PUT",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ facebook, twitter, party, gov_role, kenesst_role, additional_role, personal_phone, office_phone, email, speaker_name, speaker_phone, head_office_name, head_office_phone, political_consultant_name, political_consultant_phone, picture, position }),
@@ -62,7 +62,7 @@ export default function AdminMemberCard({ members, setUpdate }) {
     }
 
     const delMember = async () => {
-        const res = await fetch(`https://keneset-api.herokuapp.com/admin/${members.memberID}`, {
+        const res = await fetch(`https://tara-api-29yt.onrender.com/admin/${members.memberID}`, {
             method: "DELETE",
             headers: { 'content-type': 'application/json; charset=UTF-8' },
             credentials: "include"

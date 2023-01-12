@@ -37,10 +37,10 @@ export default function Homepage({ members, searchValue, loding }) {
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = members.slice(indexOfFirstPost, indexOfLastPost);
 
-   
+
     useEffect(() => {
         (async () => {
-            const res = await fetch('https://keneset-api.herokuapp.com/filter/knesset_role', {
+            const res = await fetch('https://tara-api-29yt.onrender.com/filter/knesset_role', {
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
                 credentials: "include"
@@ -56,7 +56,7 @@ export default function Homepage({ members, searchValue, loding }) {
         })();
 
         (async () => {
-            const res = await fetch('https://keneset-api.herokuapp.com/filter/gov_role', {
+            const res = await fetch('https://tara-api-29yt.onrender.com/filter/gov_role', {
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
                 credentials: "include"
@@ -71,7 +71,7 @@ export default function Homepage({ members, searchValue, loding }) {
         })();
 
         (async () => {
-            const res = await fetch('https://keneset-api.herokuapp.com/filter/party', {
+            const res = await fetch('https://tara-api-29yt.onrender.com/filter/party', {
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
                 credentials: "include"
@@ -86,7 +86,7 @@ export default function Homepage({ members, searchValue, loding }) {
         })();
 
         (async () => {
-            const res = await fetch('https://keneset-api.herokuapp.com/filter/additional_role', {
+            const res = await fetch('https://tara-api-29yt.onrender.com/filter/additional_role', {
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
                 credentials: "include"
@@ -105,7 +105,7 @@ export default function Homepage({ members, searchValue, loding }) {
 
 
     const securityFilter = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/filter/security', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/filter/security', {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
             credentials: "include"
@@ -122,7 +122,7 @@ export default function Homepage({ members, searchValue, loding }) {
     }
 
     const lawpoliceFilter = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/filter/lawpolice', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/filter/lawpolice', {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
             credentials: "include"
@@ -139,7 +139,7 @@ export default function Homepage({ members, searchValue, loding }) {
     }
 
     const foreignaffairsFilter = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/filter/foreignaffairs', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/filter/foreignaffairs', {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
             credentials: "include"
@@ -156,7 +156,7 @@ export default function Homepage({ members, searchValue, loding }) {
     }
 
     const healthwelfareFilter = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/filter/healthwelfare', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/filter/healthwelfare', {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
             credentials: "include"
@@ -173,7 +173,7 @@ export default function Homepage({ members, searchValue, loding }) {
     }
 
     const environmentFilter = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/filter/environment', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/filter/environment', {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
             credentials: "include"
@@ -190,7 +190,7 @@ export default function Homepage({ members, searchValue, loding }) {
     }
 
     const cultureFilter = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/filter/culture', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/filter/culture', {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
             credentials: "include"
@@ -207,7 +207,7 @@ export default function Homepage({ members, searchValue, loding }) {
     }
 
     const economyFilter = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/filter/economy', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/filter/economy', {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
             credentials: "include"
@@ -224,7 +224,7 @@ export default function Homepage({ members, searchValue, loding }) {
     }
 
     const educationFilter = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/filter/education', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/filter/education', {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
             credentials: "include"

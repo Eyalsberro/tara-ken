@@ -18,7 +18,7 @@ export default function AdminLogin() {
     const [password, setPassword] = useState("")
 
     const handleClcik = async () => {
-        const res = await fetch('https://keneset-api.herokuapp.com/user/login', {
+        const res = await fetch('https://tara-api-29yt.onrender.com/user/login', {
             method: "post",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ adminName, password }),

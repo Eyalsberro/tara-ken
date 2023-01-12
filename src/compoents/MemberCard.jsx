@@ -14,7 +14,7 @@ export default function MemberCard({ members }) {
 
     const memberid = () => {
         (async () => {
-            const res = await fetch(`https://keneset-api.herokuapp.com/members/${members.memberID}`, {
+            const res = await fetch(`https://tara-api-29yt.onrender.com/members/${members.memberID}`, {
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
                 credentials: "include"
